@@ -2,7 +2,7 @@ import { Client } from '@notionhq/client';
 import slugify from 'slugify';
 
 export const notion = new Client({
-  auth: process.env.NOTION_SECRET || `secret_J1xm0fQujuKUrLg8qAwKN4VbcHU15AycWwEQBtox1gi`
+  auth: process.env.NOTION_SECRET
 });
 
 export const getAllArticles = async databaseId => {
